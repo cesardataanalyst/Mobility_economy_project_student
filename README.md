@@ -67,6 +67,16 @@ Entre los hallazgos más relevantes se identificó que:
 
 ---
 
+## ¿Cómo abrir el notebook en Google Colab?
+
+* Descarga o clona este repositorio.
+* Abre Google Colab.
+* Selecciona Archivo → Abrir notebook.
+* Ve a la pestaña GitHub o carga el archivo mobility_economy_project_student.ipynb.
+* Ejecuta las celdas en orden de arriba hacia abajo.
+
+  ---
+  
 ## Herramientas utilizadas
 
 * **Python**
