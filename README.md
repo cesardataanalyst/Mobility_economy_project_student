@@ -67,35 +67,6 @@ Entre los hallazgos más relevantes se identificó que:
 
 ---
 
-## ¿Cómo abrir el notebook en Google Colab?
-
-1. Descarga o clona este repositorio.
-2. Abre **Google Colab**.
-3. Selecciona **Archivo → Abrir notebook**.
-4. Ve a la pestaña **GitHub** o carga el archivo `mobility_economy_project_student.ipynb`.
-5. Ejecuta las celdas en orden de arriba hacia abajo.
-
----
-
-## ¿Cómo reproducir el análisis?
-
-Para obtener los mismos resultados:
-
-1. Abre el notebook `mobility_economy_project_student.ipynb`.
-2. Verifica que el dataset utilizado se encuentre en la ubicación indicada dentro del notebook.
-3. Ejecuta todas las celdas de forma secuencial.
-4. El notebook realiza automáticamente:
-
-   * Importación de librerías.
-   * Carga del dataset.
-   * Limpieza y transformación de datos.
-   * Integración de las fuentes de información.
-   * Generación de estadísticas descriptivas.
-   * Creación de gráficos y visualizaciones.
-   * Obtención de las conclusiones finales.
-
----
-
 ## Herramientas utilizadas
 
 * **Python**
