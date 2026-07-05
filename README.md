@@ -1,25 +1,119 @@
-# mobility_economy_project_student
-El objetivo principal de este análisis fue estudiar la relación entre la movilidad urbana y la productividad económica en distintas ciudades del mundo durante 2024. Para ello, se analizaron variables relacionadas con congestión vehicular, tiempos promedio de viaje y PIB per cápita, buscando identificar patrones que permitan comprender cómo el tráfico puede impactar la actividad económica y la calidad de vida urbana.
+# urban-mobility-economic-analysis
+# Mobility Economy Project
 
-Las variables clave utilizadas fueron jams_delay, traffic_index_live, travel_time_live_per_10kms_mins y city_gdp_per_capita. Estas métricas permiten evaluar tanto el nivel de congestión urbana como el desempeño económico de cada ciudad, siendo útiles para la toma de decisiones en planeación urbana, infraestructura y movilidad sostenible.
-Cobertura de datos:
+## Descripción del proyecto
 
-Especifica los años analizados, número de ciudades y países incluidos. El análisis se desarrolló utilizando información correspondiente al año 2024, integrando datasets de movilidad y economía mediante una unión INNER por ciudad y año. La base final incluyó múltiples ciudades y países, permitiendo comparar comportamientos entre distintas regiones y niveles de desarrollo económico.
-Metodología (alto nivel):
+Este proyecto analiza la relación entre la **movilidad urbana** y la **productividad económica** en distintas ciudades del mundo durante **2024**. El objetivo es identificar patrones entre la congestión vehicular, los tiempos de desplazamiento y el **PIB per cápita**, con el fin de comprender cómo la movilidad puede influir en el desempeño económico y apoyar la toma de decisiones en planificación urbana e infraestructura.
 
-Describe los procesos principales: limpieza de datos (formatos, estandarización de columnas).
-Explica la agregación por ciudad–año y el uso de una unión INNER para integrar tráfico y economía.
-Menciona las validaciones visuales empleadas (distribuciones, outliers, tendencias generales).
-Primero se realizó un proceso de limpieza y estandarización de datos, incluyendo validación de formatos, selección de variables relevantes y homogenización de nombres de columnas. Posteriormente, se agregaron métricas por ciudad y año para obtener indicadores comparables entre localidades. Después, se aplicó una unión INNER para conservar únicamente las ciudades presentes en ambos datasets (movilidad y economía). Finalmente, se utilizaron gráficos exploratorios como boxplots, histogramas y gráficos de barras para identificar distribuciones, valores atípicos y posibles tendencias entre congestión vehicular y productividad económica.
+Las principales variables analizadas fueron:
 
-Hallazgos iniciales:
+* **jams_delay:** retraso promedio causado por congestión.
+* **traffic_index_live:** índice de tráfico en tiempo real.
+* **travel_time_live_per_10kms_mins:** tiempo promedio de viaje por cada 10 km.
+* **city_gdp_per_capita:** PIB per cápita de cada ciudad.
 
-Resume los patrones más importantes entre índices de tráfico y PIB per cápita.
-Destaca anomalías u outliers que podrían requerir revisión adicional o un análisis más profundo.
-Los resultados muestran que algunas ciudades con mayor PIB per cápita también presentan altos niveles de congestión vehicular, especialmente grandes centros urbanos con elevada actividad económica y densidad poblacional. Sin embargo, la relación observada no es completamente lineal, ya que existen ciudades con economías fuertes pero menores niveles de tráfico gracias a mejores sistemas de transporte e infraestructura urbana. Entre los valores atípicos destacó Ciudad de México, que presentó uno de los mayores niveles de congestión del conjunto de datos. También se identificaron diferencias importantes entre ciudades latinoamericanas y ciudades europeas o asiáticas, lo que sugiere la influencia de factores adicionales como planificación urbana, transporte público y crecimiento demográfico.
+---
 
-Recomendaciones
-Aterriza los hallazgos en acciones: ciudades prioritarias, necesidad de validar fuentes, requerimiento de análisis adicionales, o propuestas de inversión.
+## ¿Qué contiene este repositorio?
 
-¿Qué ciudad : Bogotá, Lima o Buenos Aires o alguna otra en particular, muestra la mayor correlación significativa entre altos niveles de congestión vehicular y bajos indicadores de productividad económica, sugiriendo ser una ciudad prioritaria para inversión en infraestructura de transporte?
-Se recomienda priorizar inversiones en infraestructura de transporte y movilidad inteligente en ciudades con altos niveles de congestión y menor desempeño económico relativo. También es importante complementar este análisis con variables adicionales como calidad del transporte público, emisiones contaminantes y crecimiento poblacional. Con base en los patrones observados, Bogotá y Lima podrían considerarse ciudades prioritarias para futuras inversiones en infraestructura de movilidad, debido a sus altos niveles de congestión y posibles impactos negativos sobre la productividad urbana. No obstante, se recomienda realizar análisis estadísticos más profundos para confirmar la correlación y validar la consistencia de las fuentes de datos.
+Este repositorio incluye los recursos necesarios para reproducir el análisis:
+
+* **Notebook principal (`mobility_economy_project_student.ipynb`)**
+
+  * Limpieza y preparación de datos.
+  * Integración de las bases de movilidad y economía.
+  * Análisis exploratorio de datos (EDA).
+  * Visualizaciones y conclusiones.
+
+* **README.md**
+
+  * Descripción del proyecto.
+  * Objetivos.
+  * Metodología.
+  * Instrucciones de uso.
+
+* **Gráficos**
+
+  * Histogramas.
+  * Boxplots.
+  * Gráficos comparativos.
+  * Visualizaciones utilizadas para identificar tendencias y valores atípicos.
+
+---
+
+## Metodología
+
+El análisis se desarrolló siguiendo las siguientes etapas:
+
+1. Limpieza y estandarización de los datasets.
+2. Validación de formatos y nombres de columnas.
+3. Selección de variables relevantes.
+4. Integración de los datos mediante una **unión INNER** por ciudad y año.
+5. Análisis exploratorio utilizando estadísticas descriptivas y visualizaciones.
+6. Interpretación de resultados y elaboración de recomendaciones.
+
+---
+
+## Principales hallazgos
+
+Los resultados muestran que las ciudades con mayor actividad económica tienden a presentar niveles elevados de congestión vehicular; sin embargo, la relación no es completamente lineal.
+
+Entre los hallazgos más relevantes se identificó que:
+
+* Grandes centros urbanos presentan mayores retrasos por tráfico.
+* Existen ciudades con alto PIB per cápita y niveles moderados de congestión gracias a sistemas de transporte más eficientes.
+* Bogotá y Lima aparecen como ciudades que podrían beneficiarse de inversiones adicionales en infraestructura de movilidad.
+* Los valores atípicos observados justifican análisis estadísticos complementarios para validar las relaciones encontradas.
+
+---
+
+## ¿Cómo abrir el notebook en Google Colab?
+
+1. Descarga o clona este repositorio.
+2. Abre **Google Colab**.
+3. Selecciona **Archivo → Abrir notebook**.
+4. Ve a la pestaña **GitHub** o carga el archivo `mobility_economy_project_student.ipynb`.
+5. Ejecuta las celdas en orden de arriba hacia abajo.
+
+---
+
+## ¿Cómo reproducir el análisis?
+
+Para obtener los mismos resultados:
+
+1. Abre el notebook `mobility_economy_project_student.ipynb`.
+2. Verifica que el dataset utilizado se encuentre en la ubicación indicada dentro del notebook.
+3. Ejecuta todas las celdas de forma secuencial.
+4. El notebook realiza automáticamente:
+
+   * Importación de librerías.
+   * Carga del dataset.
+   * Limpieza y transformación de datos.
+   * Integración de las fuentes de información.
+   * Generación de estadísticas descriptivas.
+   * Creación de gráficos y visualizaciones.
+   * Obtención de las conclusiones finales.
+
+---
+
+## Herramientas utilizadas
+
+* **Python**
+* **Google Colab**
+* **Pandas**
+* **NumPy**
+* **Matplotlib**
+
+---
+
+## Conclusiones
+
+Este análisis evidencia que la congestión vehicular puede estar asociada con diferencias en el desempeño económico urbano, aunque dicha relación depende de múltiples factores adicionales, como la infraestructura de transporte, la planificación urbana y el crecimiento demográfico.
+
+Los resultados obtenidos permiten identificar ciudades donde futuras inversiones en movilidad sostenible podrían generar impactos positivos sobre la productividad y la calidad de vida.
+
+---
+
+## Autor
+
+Proyecto desarrollado por **Cesar Palacio** como parte de su formación en **Data Analytics**, posteriormente reorganizado y documentado para su portafolio profesional en GitHub.
